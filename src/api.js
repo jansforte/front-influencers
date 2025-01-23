@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://server-influencers.onrender.com:4000'; // Cambia a la URL de tu backend
+const API_URL = 'https://server-influencers.onrender.com'; // Cambia a la URL de tu backend
 
 export const fetchClaims = async (username, start_time, end_time, type=1) => {
     const filter = {
