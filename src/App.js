@@ -7,10 +7,10 @@ const App = () => {
     const [claims, setClaims] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    const handleSearch = async (influencer, startDate, endtDate) => {
+    const handleSearch = async (influencer, startDate, endtDate,type) => {
         setLoading(true);
         try {
-            const results = await fetchClaims(influencer, startDate, endtDate);
+            const results = await fetchClaims(influencer, startDate, endtDate,type);
             setClaims(results);
         } catch (error) {
             console.error('Error fetching claims:', error);

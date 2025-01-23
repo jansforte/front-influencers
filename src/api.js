@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_URL = 'https://server-influencers.onrender.com:4000'; // Cambia a la URL de tu backend
 
-export const fetchClaims = async (username, start_time, end_time) => {
+export const fetchClaims = async (username, start_time, end_time, type=1) => {
     const filter = {
         username
     }
@@ -14,8 +14,15 @@ export const fetchClaims = async (username, start_time, end_time) => {
         filter.end_time = end_time;
     }
 
-    const response = await axios.get(`${API_URL}/api/influencer/process-influencer`, {
-        params: filter,
-    });
+    if(type==1){
+        const response = await axios.get(`${API_URL}/api/influencer/process-influencer`, {  
+            params: filter,
+        });
+    }
+    else{
+        const response = await axios.get(`${API_URL}/api/influencer/update-influencer`, {  
+            params: filter,
+        });
+    }
     return response.data;
 };

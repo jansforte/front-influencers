@@ -4,10 +4,11 @@ const ClaimSearch = ({ onSearch }) => {
     const [influencer, setInfluencer] = useState('');
     const [startDate, setStartDate] = useState('2025-01-01');
     const [endtDate, setEndtDate] = useState('2025-01-01');
+    const [type, setType] = useState('1');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        onSearch(influencer, startDate,endtDate);
+        onSearch(influencer, startDate,endtDate,type);
     };
 
     return (
@@ -53,7 +54,8 @@ const ClaimSearch = ({ onSearch }) => {
                 </div>
             </div>
             <div className="d-grid gap-2">
-            <button type="submit" className="btn btn-primary">Buscar</button>
+            <button type="submit" onClick={setType(1)} className="btn btn-primary">Buscar</button>
+            <button type="submit" onClick={setType(2)} className="btn btn-primary">Actualizar</button>
             </div>
         </form>
         </div>
