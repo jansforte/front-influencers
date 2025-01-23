@@ -2,7 +2,7 @@ import React from 'react';
 
 const ClaimsList = ({ claims }) => {
     
-    if (claims.count === 0 || claims.length === 0) {
+    if (claims?.count === 0 || claims.length === 0) {
         return <p>No se encontraron resultados.</p>;
     }
     
