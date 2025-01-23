@@ -15,7 +15,7 @@ export const fetchClaims = async (username, start_time, end_time, type=1) => {
     }
 
     let response = false;
-    if(type==1){
+    if(type===1){
         response = await axios.get(`${API_URL}/api/influencer/process-influencer`, {  
             params: filter,
         });
