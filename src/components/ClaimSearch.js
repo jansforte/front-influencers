@@ -54,8 +54,8 @@ const ClaimSearch = ({ onSearch }) => {
                 </div>
             </div>
             <div className="d-grid gap-2">
-            <button type="submit" onClick={setType(1)} className="btn btn-primary">Buscar</button>
-            <button type="submit" onClick={setType(2)} className="btn btn-primary">Actualizar</button>
+            <button type="submit" onClick={(e)=>setType(1)} className="btn btn-primary">Buscar</button>
+            <button type="submit" onClick={(e)=>setType(2)} className="btn btn-primary">Actualizar</button>
             </div>
         </form>
         </div>
