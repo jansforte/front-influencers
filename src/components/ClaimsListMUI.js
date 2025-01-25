@@ -28,7 +28,7 @@ const ClaimsList = ({ claims }) => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {claims.map((claim) => (
+                    {claims.data.map((claim) => (
                         <TableRow key={claim._id}>
                             <TableCell>{claim.influencer}</TableCell>
                             <TableCell>{claim.tweet}</TableCell>
