@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography, CircularProgress, Alert  } from '@mui/material';
+import { Container, Typography, CircularProgress, Alert, Button, Box  } from '@mui/material';
 import ClaimSearch from './components/ClaimSearchMUI';
 import ClaimsList from './components/ClaimsListMUI';
 import { fetchClaims } from './api';
