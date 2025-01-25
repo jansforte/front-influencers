@@ -33,7 +33,7 @@ const ClaimsList = ({ claims }) => {
                             <TableCell>{claim.influencer}</TableCell>
                             <TableCell>{claim.tweet}</TableCell>
                             <TableCell>{claim.confidence === 1 ? "Verified" : claim.confidence === 2 ? "Questionable" : "Debunked"}</TableCell>
-                            <TableCell>{claim.confidence}%</TableCell>
+                            <TableCell>{claim.score}%</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
