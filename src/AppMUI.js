@@ -23,12 +23,8 @@ const App = () => {
     };
 
     return (
-        <Container maxWidth="md" sx={{ marginTop: 4 }}>
-            <Typography variant="h4" align="center" gutterBottom>
-                {language === 'es' ? 'Buscar Influencers' : 'Search Claims'}
-            </Typography>
-
-            <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 2 }}>
+        <Container maxWidth="lg" sx={{ marginY: 4 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'flex-start', marginBottom: 2 }}>
                 <Button
                     variant={language === 'es' ? 'contained' : 'outlined'}
                     onClick={() => setLanguage('es')}
@@ -43,7 +39,9 @@ const App = () => {
                     English
                 </Button>
             </Box>
-
+            <Typography variant="h4" align="center" gutterBottom>
+                {language === 'es' ? 'Buscar Influencers' : 'Search Claims'}
+            </Typography>
             <Alert severity="info" sx={{ marginBottom: 3 }}>
                 <Typography variant="body1">
                 {language === 'es' ? (
