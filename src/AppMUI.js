@@ -46,11 +46,11 @@ const App = () => {
                 <Typography variant="body1">
                 {language === 'es' ? (
                     <>
-                        <strong>Información Importante:</strong> La información que se mostrará incluye únicamente tweets relacionados con temas de salud publicados por el influencer indicado. Si no hay resultados, puede que no haya datos disponibles. Intenta actualizar ingresando el nombre del influencer y haciendo clic en "Actualizar". Ejemplos de Influencers: -RealDoctorMike -BarbyIngle
+                        <strong>Información Importante:</strong> La información que se mostrará incluye únicamente tweets relacionados con temas de salud publicados por el influencer indicado. Si no hay resultados, puede que no haya datos disponibles. Intenta actualizar ingresando el nombre del influencer y haciendo clic en "Actualizar". <br/>Ejemplos de Influencers: -RealDoctorMike -BarbyIngle
                     </>
                 ) : (
                     <>
-                        <strong>Important Information:</strong> The information displayed below will include only tweets related to health topics posted by the specified influencer. If no results appear during the search, this might be because there is no data available for the influencer. Try updating by entering the influencer's name and clicking "Update". Examples of Influencers: -RealDoctorMike -BarbyIngle
+                        <strong>Important Information:</strong> The information displayed below will include only tweets related to health topics posted by the specified influencer. If no results appear during the search, this might be because there is no data available for the influencer. Try updating by entering the influencer's name and clicking "Update". <br/>Examples of Influencers: -RealDoctorMike -BarbyIngle
                     </>
                 )}
                 </Typography>
